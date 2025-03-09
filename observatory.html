@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halchemy Observatory</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FF8800;       /* Bright Orange */
+            --secondary: #FFD700;     /* Golden Yellow */
+            --dark: #1A1100;          /* Deep Dark Brown */
+            --light: #FFF9F2;         /* Warm White */
+            --accent: #FF4D00;        /* Bright Red-Orange */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(135deg, #050510 0%, #0A0A1F 100%);
+            color: var(--light);
+            position: relative;
+        }
+
+        header, footer {
+            position: absolute;
+            width: 100%;
+            padding: 20px;
+            z-index: 10;
+            background-color: transparent;
+            backdrop-filter: blur(3px);
+        }
+
+        header {
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer {
+            bottom: 0;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 24px;
+            color: var(--dark);
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            font-weight: 800;
+            font-size: 20px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--light);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            z-index: 5;
+        }
+
+        .form-container {
+            background: rgba(26, 17, 0, 0.8);
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 0 30px rgba(255, 136, 0, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 136, 0, 0.3);
+            animation: pulse 3s infinite alternate;
+        }
+
+        .emoji-light {
+            font-size: 64px;
+            text-align: center;
+            margin-bottom: 20px;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+            }
+        }
+
+        @keyframes pulse {
+            from {
+                box-shadow: 0 0 30px rgba(255, 136, 0, 0.2);
+            }
+            to {
+                box-shadow: 0 0 50px rgba(255, 215, 0, 0.4);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 800;
+            margin-bottom: 30px;
+            font-size: 28px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--light);
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgba(255, 136, 0, 0.3);
+            border-radius: 6px;
+            background-color: rgba(26, 17, 0, 0.3);
+            color: var(--light);
+            font-family: 'Inter', sans-serif;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(255, 136, 0, 0.2);
+        }
+
+        button {
+            padding: 12px 24px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            border: none;
+            border-radius: 6px;
+            color: var(--dark);
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            align-self: center;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 136, 0, 0.4);
+        }
+
+        .piercing-effect {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 100vh;
+            background: radial-gradient(circle at center, transparent 20%, rgba(5, 5, 16, 0.95) 80%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            
+            .form-container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="piercing-effect"></div>
+    
+    <header>
+        <div class="logo">
+            <div class="logo-icon">H</div>
+            <div class="logo-text">Halchemy Observatory</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Labs</a></li>
+                <li><a href="#">Archive</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="form-container">
+            <div class="emoji-light">💡</div>
+            <h1>Subscribe Now & Join Us</h1>
+            <p style="text-align: center; margin-bottom: 30px; color: var(--light); line-height: 1.6;">
+                We use AI to uncover the connections between history and today’s events.
+            </p>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required placeholder="Enter your email">
+                </div>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Halchemy Observatory. Like Galileo, we think differently.</p>
+    </footer>
+</body>
+</html>

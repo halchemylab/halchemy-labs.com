@@ -396,3 +396,12 @@ footer {
     opacity: 1;
     color: var(--secondary);
 }
+
+.observatory-link {
+    transition: text-shadow 0.3s, color 0.3s;
+}
+
+.observatory-link:hover {
+    color: #FF8800 !important;
+    text-shadow: 0 0 10px rgba(255, 136, 0, 0.4);
+}
