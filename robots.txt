@@ -16,4 +16,4 @@ Allow: /*.png$
 Allow: /*.svg$
 
 # Sitemap location
-Sitemap: https://www.halchemylabs.com/sitemap.xml
+Sitemap: https://halchemy-labs.com/sitemap.xml
