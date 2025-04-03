@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Allow: /js/
+Allow: /styles/
+Disallow: /js/*.map
+Disallow: /styles/*.map
+
+# Prevent duplicate content indexing
+Disallow: /*?*
+
+# Allow media files
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.svg$
+
+# Sitemap location
+Sitemap: https://www.halchemylabs.com/sitemap.xml
