@@ -3,19 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Tag Manager -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N1RNGT53YN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-N1RNGT53YN');
-</script>
-    <!-- End Google Tag Manager -->
     <title>Halchemy Labs - Redefining Business with AI Automation</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- === Core Meta Tags === -->
+    <meta name="description" content="Halchemy Labs transforms inefficient business processes with custom AI automation. Boost productivity, cut costs, and streamline workflows securely. Learn how.">
+    <meta name="author" content="Halchemy Labs">
+    <link rel="canonical" href="https://www.halchemylabs.com/" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- Ensure favicon.ico exists at the root or update path -->
+
+    <!-- === Social Media Meta Tags (Open Graph & Twitter) === -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Halchemy Labs - Redefining Business with AI Automation" />
+    <meta property="og:description" content="Halchemy Labs transforms inefficient business processes with custom AI automation. Boost productivity, cut costs, and streamline workflows securely. Learn how." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.halchemylabs.com/" />
+    <!-- *** IMPORTANT: Replace with the ACTUAL URL to your OG image (1200x630 recommended) *** -->
+    <meta property="og:image" content="https://www.halchemylabs.com/images/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Halchemy Labs" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Halchemy Labs - Redefining Business with AI Automation" />
+    <meta name="twitter:description" content="Halchemy Labs transforms inefficient business processes with custom AI automation. Boost productivity, cut costs, and streamline workflows securely. Learn how." />
+    <!-- *** IMPORTANT: Replace with the ACTUAL URL to your Twitter image (Use OG image or specific one ~2:1 ratio) *** -->
+    <meta name="twitter:image" content="https://www.halchemylabs.com/images/twitter-image.jpg" />
+    <!-- Optional: Add your Twitter handle -->
+    <!-- <meta name="twitter:site" content="@YourTwitterHandle" /> -->
+
+    <!-- === Stylesheets === -->
     <link rel="stylesheet" href="styles/main.css">
+
+    <!-- === Google Tag Manager === -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1RNGT53YN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-N1RNGT53YN');
+    </script>
+    <!-- === End Google Tag Manager === -->
+
+    <!-- === Combined JSON-LD Schema Markup === -->
+    <!-- *** IMPORTANT: Validate this entire schema block using https://validator.schema.org/ *** -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Halchemy Labs",
+          "url": "https://www.halchemylabs.com/",
+          // *** IMPORTANT: Ensure this logo URL is correct and the image exists ***
+          "logo": "https://www.halchemylabs.com/images/halchemy-labs-logo.jpg", // Assuming a standard path, update if needed
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-339-970-9433",
+            "contactType": "Sales", // Or "Customer Service", "Technical Support" etc.
+             // *** IMPORTANT: Use a professional business email if possible ***
+            "email": "info@halchemylabs.com" // Example: Replace hyp243@nyu.edu
+          },
+          "sameAs": [
+            "http://linkedin.com/company/halchemy-labs", // Consider using https:// if available
+            "https://github.com/halchemylab",
+            "https://medium.com/@harthur96"
+          ],
+          "description": "Halchemy Labs specializes in AI-powered workflow automation and business process improvement to enhance efficiency, reduce costs, and ensure data security for businesses."
+        },
+        {
+          "@type": "WebSite",
+          "url": "https://www.halchemylabs.com/",
+          "name": "Halchemy Labs",
+          "publisher": {
+              "@type": "Organization",
+              "name": "Halchemy Labs" // Reference the organization
+          }
+          // Removed potentialAction (SearchAction) as there is no site search feature visible
+        },
+        {
+          "@type": "Service",
+          "serviceType": "AI Automation Solutions",
+          "provider": {
+            "@type": "Organization",
+            "name": "Halchemy Labs" // Reference the organization again
+          },
+          "name": "Custom AI Workflow Automation",
+          "description": "Tailored AI automation for business processes including data entry, report generation, customer support, and inventory management. Focused on efficiency and security.",
+          "areaServed": [
+            { "@type": "Country", "name": "USA" },
+            { "@type": "Country", "name": "Canada" },
+            { "@type": "Country", "name": "Japan" },
+            { "@type": "Country", "name": "Taiwan" }
+            // Add more specific regions if applicable e.g., { "@type": "State", "name": "California" }
+          ],
+          "keywords": "AI automation, workflow automation, custom AI solutions, business process improvement, AI for small business, data entry automation, automated reporting" // Refined keywords
+        }
+        // You could add more "Service" objects within this @graph array for other distinct services like "Workflow Analysis"
+      ]
+    }
+    </script>
+    <!-- === End JSON-LD Schema Markup === -->
+
 </head>
 <body>
     <header id="header">
@@ -23,66 +113,69 @@
             <nav>
                 <div class="logo">
                     <div class="logo-icon">H</div>
-                    <h1>Halchemy Labs</h1>
+                    <!-- SEO Improvement: Changed H1 to SPAN for better heading structure -->
+                    <span class="logo-text">Halchemy Labs</span>
                 </div>
                 <ul>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#approach">Our Approach</a></li>
-                    <li><a href="https://medium.com/@harthur96" target="_blank">Case Studies</a></li>
+                    <!-- SEO Improvement: Added rel="noopener noreferrer" -->
+                    <li><a href="https://medium.com/@harthur96" target="_blank" rel="noopener noreferrer">Case Studies</a></li>
                     <li><a href="observatory.html" class="observatory-link">Think Tank</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
+
     <section class="hero" id="hero">
         <canvas id="heroCanvas" class="hero-canvas"></canvas>
         <div class="container">
             <div class="hero-content">
+                <!-- This is the Primary H1 for the page -->
                 <h1>Transform Your Workflow with <span class="gradient-text">AI Alchemy</span></h1>
                 <p>We convert inefficient processes into streamlined, intelligent workflows with precise, AI-powered automation that delivers immediate impact.</p>
                 <a href="#approach" class="btn">Get Started</a>
             </div>
         </div>
     </section>
-    
+
     <section class="section" id="services">
         <div class="container">
             <div class="section-header">
                 <h2>Our <span class="gradient-text">Services</span></h2>
-                <p>We deliver tailored AI solutions that transform your operations without unnecessary complexity.</p>
+                <p>We deliver tailored AI solutions that transform your operations without unnecessary complexity, focusing on business process improvement.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">🔍</div>
                     <h3>Workflow Analysis</h3>
-                    <p>Detailed assessments to uncover bottlenecks and inefficiencies in your current processes.</p>
+                    <p>Detailed assessments to uncover bottlenecks and inefficiencies in your current business processes.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">⚙️</div>
                     <h3>Custom AI Automation</h3>
-                    <p>Purpose-built tools for data entry, report generation, customer support, and inventory management.</p>
+                    <p>Purpose-built AI tools and custom AI solutions for data entry, report generation, customer support, and inventory management.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🔄</div>
                     <h3>Seamless Integration</h3>
-                    <p>Our solutions blend into your existing systems without disruption to your operations.</p>
+                    <p>Our AI automation solutions blend into your existing systems without disruption to your operations.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">📊</div>
                     <h3>Data Analysis & Reporting Agents</h3>
-                    <p>AI agents that convert raw data into actionable insights for better decision-making.</p>
+                    <p>AI agents that convert raw data into actionable insights for better decision-making and automated reporting.</p>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section class="section differentiators" id="approach">
         <div class="container">
             <div class="section-header">
                 <h2>Why Choose <span class="gradient-text">Halchemy Labs</span></h2>
-                <p>Our approach to AI automation is different - focused on precision, security, and measurable results.</p>
+                <p>Our approach to AI automation is different - focused on precision, security, and measurable results for small businesses and beyond.</p>
             </div>
             <div class="diff-container">
                 <div class="diff-content">
@@ -91,62 +184,67 @@
                             <div class="diff-icon">⚡</div>
                             <div>
                                 <h3>"Atomic" Efficiency</h3>
-                                <p>Our philosophy is simple—efficiency without excess. That's why we believe in fast, small, and lean processes over big, bloated, clunky systems that tries to check every box (but performs poorly).</p>
+                                <p>Our philosophy is simple—efficiency without excess. That's why we believe in fast, small, and lean processes over big, bloated, clunky systems. Ideal for targeted business process improvement.</p>
                             </div>
                         </div>
                         <div class="diff-item">
                             <div class="diff-icon">🔒</div>
                             <div>
                                 <h3>Confidential & Secure</h3>
-                                <p>Our automation solutions prioritize data protection, ensuring sensitive processes remain safeguarded. Aside from essential API calls, all data will be stored locally.</p>
+                                <p>Our automation solutions prioritize data protection, ensuring sensitive processes remain safeguarded. Aside from essential API calls, all data can be stored locally for enhanced security.</p>
                             </div>
                         </div>
                         <div class="diff-item">
                             <div class="diff-icon">📈</div>
                             <div>
-                                <h3>No Maintenance</h3>
-                                <p>We are going to be clear! No ongoing service contracts for continuous support and updates, since we will not be delivering large bloated systems. If further support is needed, clients can engage us for additional consultation.</p>
+                                <h3>No Maintenance Contracts</h3>
+                                <p>We are clear! No *required* ongoing service contracts for continuous support and updates, since we deliver lean, focused AI solutions. If further support or new custom AI solutions are needed, clients can engage us for additional consultation.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-container">
-                    <iframe id="youtubeVideo" src="https://www.youtube.com/embed/dTNSFX-zu0s?enablejsapi=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="youtubeVideo" src="https://www.youtube.com/embed/dTNSFX-zu0s?enablejsapi=1" title="Halchemy Labs - AI Automation Explained" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <div class="container">
         <div class="cta" id="contact">
             <h2>Ready to Transform Your <span class="gradient-text">Workflow?</span></h2>
-            <p>Book a consultation to discover how our AI solutions can elevate your business operations.</p>
-            <a href="https://calendly.com/alchemy27/30min" target="_blank" class="btn">Book a Consultation</a>
+            <p>Book a consultation to discover how our custom AI solutions can elevate your business operations.</p>
+            <!-- Added rel="noopener noreferrer" -->
+            <a href="https://calendly.com/alchemy27/30min" target="_blank" rel="noopener noreferrer" class="btn">Book a Consultation</a>
         </div>
     </div>
-    
+
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
                     <div class="logo">
                         <div class="logo-icon">H</div>
-                        <h1>Halchemy Labs</h1>
+                         <!-- SEO Improvement: Changed H1 to DIV for better heading structure -->
+                        <div class="footer-brand-name">Halchemy Labs</div>
                     </div>
                     <p>Redefining business operations with AI-powered workflow automation that drives productivity, cuts costs, and ensures data security.</p>
                     <div class="footer-social">
-                        <a href="http://linkedin.com/company/halchemy-labs" target="_blank" title="LinkedIn" style="margin-right: 15px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <!-- Added rel="noopener noreferrer" and aria-label -->
+                        <a href="http://linkedin.com/company/halchemy-labs" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="Halchemy Labs on LinkedIn" style="margin-right: 15px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                             </svg>
                         </a>
-                        <a href="https://github.com/halchemylab" target="_blank" title="GitHub" style="margin-right: 15px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <!-- Added rel="noopener noreferrer" and aria-label -->
+                        <a href="https://github.com/halchemylab" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="Halchemy Labs on GitHub" style="margin-right: 15px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
                             </svg>
                         </a>
-                        <a href="https://medium.com/@harthur96" target="_blank" title="Medium">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <!-- Added rel="noopener noreferrer" and aria-label -->
+                        <a href="https://medium.com/@harthur96" target="_blank" rel="noopener noreferrer" title="Medium" aria-label="Halchemy Labs on Medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M0 0v24h24V0H0zm19.938 5.686L18.651 6.92a.376.376 0 0 0-.143.362v9.067a.376.376 0 0 0 .143.361l1.257 1.234v.271h-6.322v-.271l1.302-1.265c.128-.128.128-.165.128-.36V8.99l-3.62 9.195h-.49L6.69 8.99v6.163a.85.85 0 0 0 .233.707l1.694 2.054v.271H3.815v-.271L5.51 15.86a.82.82 0 0 0 .218-.707V8.027a.624.624 0 0 0-.203-.527L4.019 5.686v-.271h4.674l3.613 7.923 3.176-7.923h4.456v.271z"/>
                             </svg>
                         </a>
@@ -157,7 +255,8 @@
                     <ul>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#approach">Our Approach</a></li>
-                        <li><a href="https://medium.com/@harthur96" target="_blank">Case Studies</a></li>
+                        <!-- Added rel="noopener noreferrer" -->
+                        <li><a href="https://medium.com/@harthur96" target="_blank" rel="noopener noreferrer">Case Studies</a></li>
                         <li><a href="observatory.html" class="observatory-link">Think Tank</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -165,17 +264,19 @@
                 <div class="footer-links">
                     <h3>Contact</h3>
                     <ul>
+                         <!-- *** IMPORTANT: Update if using a different email like info@halchemylabs.com *** -->
                         <li><a href="mailto:hyp243@nyu.edu">hyp243@nyu.edu</a></li>
-                        <li><a href="tel:+1 3399709433">+1 339-970-9433</a></li>
+                        <li><a href="tel:+13399709433">+1 339-970-9433</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Halchemy Labs. All rights reserved.</p>
+                 <!-- Updated Copyright Year -->
+                <p>© 2024 Halchemy Labs. All rights reserved.</p>
             </div>
         </div>
     </footer>
-    
+
     <script src="js/animations.js"></script>
     <script src="js/scripts.js"></script>
     <script src="//code.tidio.co/vnoksgne9zoiv1boikzuzms4c5mjmohi.js" async></script>
