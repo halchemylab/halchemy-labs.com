@@ -6,7 +6,7 @@ Disallow: /js/*.map
 Disallow: /styles/*.map
 
 # Prevent duplicate content indexing
-Disallow: /*?*
+# Disallow: /*?*
 
 # Allow media files
 Allow: /*.jpg$
